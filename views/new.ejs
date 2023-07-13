@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/css/new.css">
+    <title>New</title>
+    <script src="https://unpkg.com/qrcode.react"></script>
+
+  </head>
+  <body>
+    <h1>Shorten your link with ease</h1>
+    <h2>Nothing does it better than SCISSOR</h2>
+    
+    <!-- <form method="POST" action="/shorten">
+    
+        <div>
+          <label for="longUrl">Long URL:</label>
+          <input type="text" id="longUrl" name="longUrl" required>
+        </div>
+        <div>
+          <label for="shortUrl">Preferred Short URL:</label>
+          <input type="text" id="shortUrl" name="shortUrl" required>
+        </div>
+        <div>
+          <button type="submit">Shorten URL</button>
+        </div>
+      </form> -->
+
+      
+      <form action="/dashboard/new/shorten" method="post">
+        <input type="text" name="longUrl" placeholder="Long URL" required />
+        <input type="text" name="shortUrl" placeholder="Short URL (optional)" />
+        <input type="submit" value="Shorten" />
+      </form>
+      
+   
+
+    <h3 id="shortenedUrlHeading" style="display: none;">Shortened URL:</h3>
+    <p id="shortenedUrl" style="display: none;"></p>
+
+    <h3 id="qrcodeHeading" style="display: none;">QR Code:</h3>
+    <img id="qrcode" style="display: none;" alt="QR Code" />
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
+
+            
+            <div>
+        <button class="btn" id="btn" ><a href="/dashboard">Back to Dashboard</a></button>
+          <button class="btn" id="btn" ><a href="/clicks">View link history</a></button>
+          
+        </div>
+
+  </body>
+</html>
+
+

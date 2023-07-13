@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/css/shorten.css">
+    <title>Shortened URL</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <h1>Shortened URL</h1>
+    <p>Your URL has been successfully shortened!</p>
+    <button class="btn-1" id="btn-1">Short URL: <a href="<%= shortUrl %>"><%= shortUrl %></a></button>
+    <img src="<%= qrCode %>" alt="QR Code">
+    <p>Scan the QR code to access the shortened URL.</p>
+    <button class="btn" id="btn"><a href="/dashboard" class="button">Back to Dashboard</a></button>
+    <button class="btn" id="btn"><a href="/logout" class="button">Logout</a></button>
+
+    <button class="btn" id="btn"> <a href="/clicks" class="button">View Clicks</a></button>
+
+   
+  </body>
+</html>
